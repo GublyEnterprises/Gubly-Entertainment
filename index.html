@@ -1,19 +1,246 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Gubly Entertainment</title>
-</head>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gubly Entertainment brings African history, heroes and cultures to life through educational animation.">
+  <title>Gubly Entertainment | Every Story Begins Somewhere</title>
+  <style>
+    :root {
+      --night: #14252b;
+      --forest: #234c42;
+      --gold: #f7c66b;
+      --sand: #fff3dc;
+      --orange: #c76b3b;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--night);
+      background: #fffaf1;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    header {
+      background: var(--night);
+      color: white;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .brand {
+      font-size: 1.3rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: var(--gold);
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    nav a { font-size: .9rem; }
+    nav a:hover { color: var(--gold); }
+    .hero {
+      min-height: 570px;
+      padding: 100px 7%;
+      display: flex;
+      align-items: center;
+      color: white;
+      background:
+        linear-gradient(90deg,rgba(20,37,43,.88),rgba(20,37,43,.15)),
+        radial-gradient(ellipse at 75% 65%,#ffe5a0 0%,#e99951 22%,#ac5b50 48%,#293e53 100%);
+    }
+    .hero-content { max-width: 660px; }
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: clamp(2.8rem,6vw,5.5rem);
+      line-height: 1.08;
+      margin: 15px 0;
+    }
+    .hero p { font-size: 1.15rem; max-width: 540px; }
+    .button {
+      display: inline-block;
+      margin-top: 22px;
+      background: var(--gold);
+      color: var(--night);
+      padding: 13px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+    .button:hover { background: white; }
+    section { padding: 75px 7%; }
+    .section-heading {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 40px;
+    }
+    h2 { font-size: clamp(2rem,4vw,3rem); margin: 0 0 15px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+      gap: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,.07);
+    }
+    .card-art {
+      height: 180px;
+      display: grid;
+      place-items: center;
+      font-size: 4rem;
+      background: linear-gradient(135deg,#e7b56b,#aa5d39);
+    }
+    .card:nth-child(2) .card-art {
+      background: linear-gradient(135deg,#a4c2a2,#366b5c);
+    }
+    .card:nth-child(3) .card-art {
+      background: linear-gradient(135deg,#e2aa77,#794b48);
+    }
+    .card-content { padding: 24px; }
+    .card h3 { margin-top: 0; font-size: 1.4rem; }
+    .about {
+      background: var(--forest);
+      color: white;
+      text-align: center;
+    }
+    .about p { max-width: 800px; margin: auto; }
+    .journey { background: var(--sand); }
+    .tag {
+      display: inline-block;
+      background: #f6e1ba;
+      color: #684321;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: .8rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .explorers {
+      text-align: center;
+      background: #fff;
+    }
+    .explorers p { max-width: 720px; margin: 0 auto; }
+    .coming {
+      background: var(--night);
+      color: white;
+      text-align: center;
+    }
+    .coming p { max-width: 650px; margin: auto; }
+    footer {
+      padding: 35px 7%;
+      background: #0b171c;
+      color: #e5e5e5;
+      text-align: center;
+    }
+    footer strong { color: var(--gold); }
+    @media(max-width:650px) {
+      header { justify-content: center; text-align: center; }
+      nav { justify-content: center; gap: 12px; }
+      .hero { min-height: 490px; padding: 70px 7%; }
+      section { padding: 55px 6%; }
+    }
+  </style>
+</head>
 <body>
 
-<h1>Welcome to Gubly Entertainment</h1>
+<header>
+  <a class="brand" href="#home">GUBLY ENTERTAINMENT</a>
+  <nav aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#journey">Our Journey</a>
+    <a href="#explorers">Explorers</a>
+    <a href="#watch">Watch</a>
+  </nav>
+</header>
 
-<p>
-African stories.
-African heroes.
-African cultures.
-</p>
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="eyebrow">Welcome to Gubly Entertainment</div>
+      <h1>Every Story Begins Somewhere.</h1>
+      <p>Ours begins in Gumel. Join two young explorers as they discover the extraordinary heroes, histories and cultures of Africa.</p>
+      <a class="button" href="#journey">Begin the Adventure</a>
+    </div>
+  </section>
 
+  <section class="about" id="about">
+    <h2>Our Stories. Our Heritage. Our Future.</h2>
+    <p>Gubly Entertainment is an educational storytelling initiative dedicated to bringing African history and cultural heritage to life through animation. We believe every community has a story worth telling and every child deserves to discover the richness of their heritage.</p>
+  </section>
+
+  <section class="journey" id="journey">
+    <div class="section-heading">
+      <span class="tag">THE BEGINNING</span>
+      <h2>Our Journey Starts at Home</h2>
+      <p>Before exploring the continent, our young adventurers begin by discovering their own roots.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-art">🏘️</div>
+        <div class="card-content">
+          <span class="tag">CHAPTER 01</span>
+          <h3>Gumel Emirate</h3>
+          <p>Discover the history, traditions and heritage of Gumel, the hometown of our explorers.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-art">🌿</div>
+        <div class="card-content">
+          <span class="tag">CHAPTER 02</span>
+          <h3>Jigawa State</h3>
+          <p>Explore Jigawa and learn about its five emirates, diverse communities and cultural heritage.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-art">📜</div>
+        <div class="card-content">
+          <span class="tag">CHAPTER 03</span>
+          <h3>Borno & Our Roots</h3>
+          <p>Follow historical connections and traditions linking the Gumalawa to Borno and the wider Kanem-Bornu world.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="explorers" id="explorers">
+    <span class="tag">MEET OUR CHARACTERS</span>
+    <h2>Two Siblings. One Extraordinary Adventure.</h2>
+    <p>Meet a curious ten-year-old girl and her adventurous seven-year-old brother from Gumel, Nigeria. Together, they will travel across Africa, ask questions, make discoveries and bring remarkable stories to life.</p>
+  </section>
+
+  <section class="coming" id="watch">
+    <span class="eyebrow">Our First Animated Adventure</span>
+    <h2>Coming Soon: The Story of Gumel</h2>
+    <p>Our first production will introduce the explorers and the history of their hometown. Follow Gubly Entertainment as the adventure begins.</p>
+    <a class="button" href="#about">Discover Our Mission</a>
+  </section>
+</main>
+
+<footer>
+  <strong>GUBLY ENTERTAINMENT</strong>
+  <p>Discover the Heroes. Celebrate the Cultures. Inspire the Future.</p>
+  <p>Part of the Gubly Enterprises vision.</p>
+  <small>&copy; <span id="year"></span> Gubly Entertainment. All rights reserved.</small>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
-
 </html>
